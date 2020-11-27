@@ -46,16 +46,17 @@
 /*==          MAIN COMPONENT    		*/
 /*-------------------------------------*/
 
+/* -------Bock---------*/
+
 body {
 	margin: 0;
-	font-family: 'Raleway-regular', sans-serif;	
+	font-family: "Raleway-regular", Arial, Helvetica, sans-serif;
 }
 
 a {
-	color: black;
+	color: #000000;
+	text-decoration: none;
 }
-
-/* -------Bock---------*/
 
 .block {
 
@@ -72,35 +73,54 @@ a {
 /*--------Star-----*/
 
 .ranking {
-
+  	color: #F2F2F2;
 }
 
 .ranking__icon {
 
 }
 
-.is-active {
-
+.ranking__icon.is-active {
+	color: #0065FC;	
 }
 
 /*---------------------------------------*/
 /*==              HEADER                */
 /*-------------------------------------*/
 
-.header{
-
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+	margin-bottom: 20px;			
 }
 
 .header__action {
-
+	background-color: transparent;
+	border: none;
+	color: #0065FC;
+	font-size: 1rem;
+	font-weight: 700;	
+	padding-right: 20px;
 }
 
 .header__nav {
-
+	display: flex;
+	
 }
 
 .header__link {
+	padding: 10px 50px;
+	border-bottom: solid 2px #F2F2F2;
+}
 
+.header__link.is-active {
+	border-bottom: solid 2px #0065FC;
+	color: #0065FC;
+}
+
+.logo {
+	padding-left: 20px;
 }
 
 
@@ -109,19 +129,33 @@ a {
 /*-------------------------------------*/
 
 .search {
-
+	
 }
 
-.search__icon {
-
+.search__icon {	
+	background-color: #F2F2F2;
+	border-top-left-radius: 0.9rem;
+	border-bottom-left-radius: 0.9rem;
+	padding: 15px 15px;	
+	position: absolute; 	
 }
 
 .search__input {
-
+	border:solid 1px #F2F2F2;
+	border-radius: 0.9rem;	
+	font-size: 1.1rem;
+	font-weight: 700;	
+	padding: 12px 50px;		
 }
 
 .main__button {
-
+	background-color: #0065FC;
+	border-style: none;
+	border-radius: 0.9rem;
+	color: #F2F2F2;
+	padding: 16px 15px;
+	position: absolute; 
+	right: 21px;
 }
 
 .search__action {
@@ -129,23 +163,40 @@ a {
 }
 
 .filters {
-
+	padding-bottom: 20px;
+	height: auto;	
 }
 
 .filter {
-
+	background-color: transparent;
+	border: solid 2px #F2F2F2;
+	border-radius: 2rem;
+	font-size: 1rem;
+	margin-bottom: 5px;	
+	padding: 15px 15px 18px 60px;
+	
 }
 
 .filter__icon {
-
+	background-color: #DEEBFF;
+	border-radius: 50%;
+	color: #0065FC;	
+	padding: 20px;
+	position: absolute;	
 }
 
 .info {
 
 }
 
-.info__icone {
-
+.info__icon {
+	border: solid 1px #F2F2F2;
+	border-radius: 100%;
+	color: #0065FC;
+	float: left;
+	font-size: 0.5em;		
+	margin-right: 5px;
+	padding: 5px;
 }
 
 /*---------------------------------------*/
@@ -155,7 +206,7 @@ a {
 /*------------- block ----------------*/
 
 .block--hit {
-		
+
 }
 
 .block--activities {
