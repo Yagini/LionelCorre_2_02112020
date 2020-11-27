@@ -1,0 +1,203 @@
+
+/*--------------------------------------------*/
+/*==              SUMMARY                  */
+/*------------------------------------------*/
+/*
+	COLORS:					 18 
+	FONTS: 					 27
+	RESET:					 46
+	MAIN COMPONENT:			 54
+	HEADER:					114
+	SECTION SEARCH:			151
+	SECTION TOP:			236
+	SECTION ACCOMODATION:	283
+	SECTION ACTIVITY: 		309
+	SECTION FOOTER:			317
+	SECTION QUERIES:		334
+
+/*-------------------------------------------*/
+/*==              COLORS                  */
+/*-----------------------------------------*/
+/*
+	Black (text): 				#000
+	Gray (Background)			#F2F2F2
+	Bleu light (Background) 	#DEEBFF
+	Bleu Dark (icones)			#0065FC	
+
+/*-------------------------------------------*/
+/*==              FONTS                  */
+/*-----------------------------------------*/
+
+@font-face {
+	src: url("../webfonts/Raleway-Regular.ttf") format("truetype");
+	font-family: "Raleway-regular";
+	font-style: normal;
+	font-weight: normal;	
+}
+  
+@font-face {
+	src: url("../webfonts/Raleway-Bold.ttf") format("truetype");
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;  
+}
+
+/*---------------------------------------*/
+/*==          MAIN COMPONENT    		*/
+/*-------------------------------------*/
+
+body {
+	margin: 0;
+	font-family: 'Raleway-regular', sans-serif;	
+}
+
+a {
+	color: black;
+}
+
+/* -------Bock---------*/
+
+.block {
+
+}
+
+.block__title {
+
+}
+
+.block__subtitle {
+
+}
+
+/*--------Star-----*/
+
+.ranking {
+
+}
+
+.ranking__icon {
+
+}
+
+.is-active {
+
+}
+
+/*---------------------------------------*/
+/*==              HEADER                */
+/*-------------------------------------*/
+
+.header{
+
+}
+
+.header__action {
+
+}
+
+.header__nav {
+
+}
+
+.header__link {
+
+}
+
+
+/*---------------------------------------*/
+/*==         SEARCH + FILTERS 	        */
+/*-------------------------------------*/
+
+.search {
+
+}
+
+.search__icon {
+
+}
+
+.search__input {
+
+}
+
+.main__button {
+
+}
+
+.search__action {
+
+}
+
+.filters {
+
+}
+
+.filter {
+
+}
+
+.filter__icon {
+
+}
+
+.info {
+
+}
+
+.info__icone {
+
+}
+
+/*---------------------------------------*/
+/*== HIT + ACCOMODATIONS + ACTIVITIES	*/
+/*-------------------------------------*/
+
+/*------------- block ----------------*/
+
+.block--hit {
+		
+}
+
+.block--activities {
+
+}
+
+/*-------------- box ----------------*/
+
+.box {
+			
+}
+
+.box__content {
+
+}
+
+.box__image {
+				
+}
+
+.box__subtitle {
+
+}
+
+.box__title {
+
+}
+
+/*---------------------------------------*/
+/*==              FOOTER                */
+/*-------------------------------------*/
+
+.block--footer {
+	
+}
+
+.is-first {
+
+}
+/*---------------------------------------*/
+/*==              QUERIES               */
+/*-------------------------------------*/
+
+/*-------------- DESKTOP -------------*/
+
