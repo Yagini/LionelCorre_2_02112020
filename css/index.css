@@ -1,19 +1,6 @@
-
 /*--------------------------------------------*/
 /*==              SUMMARY                  */
 /*------------------------------------------*/
-/*
-	COLORS:					 18 
-	FONTS: 					 27
-	RESET:					 46
-	MAIN COMPONENT:			 54
-	HEADER:					114
-	SECTION SEARCH:			151
-	SECTION TOP:			236
-	SECTION ACCOMODATION:	283
-	SECTION ACTIVITY: 		309
-	SECTION FOOTER:			317
-	SECTION QUERIES:		334
 
 /*-------------------------------------------*/
 /*==              COLORS                  */
@@ -30,9 +17,9 @@
 
 @font-face {
 	src: url("../webfonts/Raleway-Regular.ttf") format("truetype");
-	font-family: "Raleway-regular";
+	font-family: "Raleway";
 	font-style: normal;
-	font-weight: normal;	
+	font-weight: 400;	
 }
   
 @font-face {
@@ -46,246 +33,302 @@
 /*==          MAIN COMPONENT    		*/
 /*-------------------------------------*/
 
-/* -------Bock---------*/
-
-body {
-	margin: 0;	
-	font-family: "Raleway-regular", Arial, Helvetica, sans-serif;
+body {		
+	font-family: "Raleway", Arial, sans-serif;
+	margin: 0;		
 }
 
 a {
 	color: #000000;
+	display: block;
 	text-decoration: none;
-	display: flex;
-	margin-bottom: 10px;
-
 }
 
-h3 {
-	font-size: 1rem;
-}
-
-.block {
-	padding: 0 20px;
-}
-
-.block__title {
-	display: flex;
-	justify-content: space-between;
-}
-
-.block__subtitle {
-	
-}
-
-.accomodations__button {
-	background-color: transparent;
-	border: none;
-	font-size: 1rem;
-	font-weight: 700;
-}
-
-/*--------Star-----*/
-
-.ranking {
-	color: #F2F2F2;
-	font-size: 0.8rem;
-	padding-bottom: 15px;
-}
-
-.ranking__icon {
-
-}
-
-.ranking__icon.is-active {
-	color: #0065FC;	
-}
-
-/*---------------------------------------*/
-/*==              HEADER                */
-/*-------------------------------------*/
-
-.header {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;	
-	margin-bottom: 20px;		
-}
-
-.header__action {
-	background-color: transparent;
-	border: none;
-	color: #0065FC;
-	font-size: 1rem;
-	font-weight: 700;	
-	padding-right: 20px;
-}
-
-.header__nav {
-	display: flex;
-}
-
-.header__link {
-	padding: 10px 50px;
-	border-bottom: solid 2px #F2F2F2;
-}
-
-.header__link.is-active {
-	border-bottom: solid 2px #0065FC;
-	color: #0065FC;
-}
-
-.logo {
-	padding-left: 20px;
-}
-
-
-/*---------------------------------------*/
-/*==         SEARCH + FILTERS 	        */
-/*-------------------------------------*/
-
-.search {
-	position: relative;
-}
-
-.search__icon {	
-	background-color: #F2F2F2;
-	border-top-left-radius: 0.9rem;
-	border-bottom-left-radius: 0.9rem;
-	padding: 15px 15px;	
-	position: absolute; 	
-}
-
-.search__input {
-	border:solid 1px #F2F2F2;
-	border-radius: 0.9rem;	
-	font-size: 1.1rem;
-	font-weight: 700;	
-	padding: 12px 50px;	
-}
-
-.main__button {
-	background-color: #0065FC;
-	border-style: none;
-	border-radius: 0.9rem;
-	color: #F2F2F2;
-	padding: 16px 16px;
-	position: absolute; 
-	right: -2px;
-	top: 0;
-}
-
-.search__action {
-
-}
-
-.filters {
-	padding-bottom: 20px;
-		
-}
-
-.filter {
-	background-color: transparent;
-	border: solid 2px #F2F2F2;
-	border-radius: 2rem;
-	font-size: 1rem;
-	margin: 0 15px 10px 10px;	
-	padding: 15px 15px 15px 60px;
-	position: relative;	
-}
-
-.filter__icon {
-	background-color: #DEEBFF;
-	border-radius: 50%;
-	color: #0065FC;	
-	padding: 18px;
-	position: absolute;
-	top: -2px;
-	left: -1px;	
-}
-
-.info {
-
-}
-
-.info__icon {
-	border: solid 1px #F2F2F2;
-	border-radius: 100%;
-	color: #0065FC;
-	float: left;
-	font-size: 0.5em;		
-	margin-right: 5px;
-	padding: 5px;
-}
-
-/*---------------------------------------*/
-/*== HIT + ACCOMODATIONS + ACTIVITIES	*/
-/*-------------------------------------*/
-
-/*------------- block ----------------*/
-
-.block--hit {
-	background-color: #F2F2F2;
-	padding: 20px;
-}
-
-/*-------------- box ----------------*/
-
-.box {	
-	background-color: #ffffff;
-	border-radius: 2rem;
-	box-shadow: 1px 1px 5px #F2F2F2;
-	display: flex;
-	flex-direction: column;			
-	margin-bottom: 20px;	
-}
-
-.box__content {
-	padding: 0 15px;
-}
-
-.box__image {
-	border-top-left-radius: 2rem;
-	border-top-right-radius: 2rem;
-	height: 150px;
-	object-fit: cover;
-	padding: 5px;				
-}
-
-.box__subtitle {
-	font-weight: 400;	
-}
-
-.block--hit .box {
-	display: flex;
-	flex-direction: row;	
-}
-
-.block--hit .box__image {
-	border-bottom-left-radius: 2rem;
-	border-top-right-radius: 0;	
-	height: 180px;
-	width: 50%;
-}
-
-.block--activities .box__image {
+button {
 	padding: 0;
 }
 
-/*---------------------------------------*/
-/*==              FOOTER                */
-/*-------------------------------------*/
+h1, h2, h3, h4, p {
+	font-weight: 400;
+	margin: 0;	
+}
+
+h3 {
+	font-size: 16px;	
+}
+
+.action {
+	background-color: transparent;
+	border: none;
+	font-size: 18px;
+	font-weight: 700;		
+}
+
+.block {
+	padding: 35px 20px;
+}
+
+.block__action {
+	margin-top: 15px;	
+}
+
+.block__subtitle {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 30px 0 20px;
+}
+
+.block__title {
+	align-items: center;
+	display: flex;
+	font-size: 22px;
+	font-weight: 700;
+	justify-content: space-between;	
+	margin-bottom: 20px;	
+}
+
+.block--accomodations {
+	padding-bottom: 15px;
+}
+
+.block--activities .box {	
+	margin-bottom: 30px;
+	padding: 0;	
+}
+
+.block--activities .box__images {
+	height: 134px;
+}
+
+.block--activities .box__title {
+	padding: 20px;
+}
 
 .block--footer {
 	background-color: #F2F2F2;	
 }
 
-.is-first {
-
+.block--hit {
+	background-color: #F2F2F2;
 }
+
+.block--hit .box {
+	display: flex;
+	height: 145px;
+}
+
+.block--hit .box__image {
+	border-bottom-left-radius: 15px;
+	border-top-right-radius: 0;
+	height: 100%;
+	width: 128px;	
+}
+
+.block__subtitle--first {
+	margin-top: 0;
+}
+
+.box {
+	border-radius: 20px;
+	box-shadow: 1px 1px 10px 10px #D9D9D9;
+	margin-bottom: 15px;
+	padding: 5px;
+}
+
+.box__content {
+	display: flex;	
+	flex-direction: column;
+	padding: 10px 25px 10px 15px;
+}
+
+.box__image {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	height: 114px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.box__subtitle {
+	flex: 1;
+	font-size: 14px;
+	margin-top: 5px;
+	margin-bottom: 10px;	
+}
+
+.box__title {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.filter {
+	background-color: transparent;
+	font: 700 16px "Raleway";	
+	align-items: center;
+	border: solid 2px #D9D9D9;
+	border-radius: 25px;
+	display: flex;
+	height: 50px;
+	margin: 0 10px 10px 0;			
+	padding-right: 15px;		
+}
+
+.filter__icon {
+	align-items: center;
+	background-color: #DEEBFF;
+	border-radius: 50%;
+	color: #0065FC;	
+	display: flex;	
+	height: 50px;
+	justify-content: center;
+	margin-left: -3px;
+	margin-right: 10px;	
+	width: 50px;
+}
+
+.filters {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.filters__title {
+	width: 100%;
+}
+
+.header {
+	align-items: center;
+	display: flex;	
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.header__action {
+	color: #0065FC;
+	margin-right: 20px;
+}
+
+.info {
+	margin-top: 20px;
+	display: flex;
+}
+
+.info__icon {
+	align-items: center;
+	border: solid 1px #D9D9D9;
+	border-radius: 50%;
+	color: #0065FC;
+	display: flex;
+	font-size: 14px;
+	font-weight: 700;	
+	height: 25px;
+	justify-content: center;
+	line-height: 0;
+	margin-right: 10px;		
+	width: 25px;	
+}
+
+.logo {
+	margin: 25px 0 20px 20px;
+}
+
+.nav {
+	display: flex;
+	width: 100%;	
+}
+
+.nav__link {
+	border-bottom: solid 3px #F2F2F2;
+	flex: 1;
+	padding: 10px;
+	text-align: center;	
+}
+
+.nav__link.is-active {
+	border-color: #0065FC;
+	color: #0065FC;
+}
+
+.ranking {
+	font-size: 12px;	
+}
+
+.ranking__icon {
+	color: #D9D9D9;
+}
+
+.ranking__icon.is-active{
+	color: #0065FC;
+}
+
+.search {
+	display: flex;
+	margin-top: 30px;
+	
+}
+
+.search__action {
+	background-color: #0065FC;
+	border: none;
+	border-radius: 15px;
+	height: 50px;
+	margin-left: -17px;	
+	width: 50px;
+}
+
+.search__icon {
+	align-items: center;
+	background-color: #F2F2F2;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	font-size: 18px;
+	display: flex;
+	height: 50px;
+	justify-content: center;	
+	width: 50px;
+}
+
+.search__input {
+	font: 700 18px "Raleway";	
+	border: solid 2px #F2F2F2;
+	padding: 0 15px;
+}
+
+
+.search-action__icon {	
+	color: #ffffff;
+	font-size: 18px;	
+}
+
+
 /*---------------------------------------*/
 /*==              QUERIES               */
 /*-------------------------------------*/
 
 /*-------------- DESKTOP -------------*/
 
+@media only screen and (min-width: 992px) {
+	
+	.block {
+		border-radius: 25px;						
+	}
+	
+	.block--activities {
+		display: flex;
+		flex-wrap: wrap;		
+	}
+
+	.block--accomodations {
+		background-color: #F2F2F2;
+		display: flex;
+		flex-wrap: wrap;		
+	}	
+
+	.block--accomodations .box__image {
+		width: 240px;
+		height: auto;
+	}
+
+	.block--accomodations .block__title {
+		width: 100%;
+	}
+}
