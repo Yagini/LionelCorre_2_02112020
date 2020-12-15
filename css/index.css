@@ -5,9 +5,9 @@
 /* L14		COLORS
 /* L23		FONTS
 /* L41		MAIN COMPONENT
-/* L92		HEADDER + NAV
-/* L133		FILTERS + SEARCH
-/* L240		BLOCK + BOXW
+/* L93		HEADDER + NAV
+/* L134		FILTERS + SEARCH
+/* L239D		BLOCK + BOX
 /* L349		QUERIES
 /*
 /*-------------------------------------------*/
@@ -44,7 +44,7 @@
 body {		
 	font-family: "Raleway", Arial, sans-serif;	
 	margin: 0;
-	box-sizing: border-box;			
+	box-sizing: border-box;					
 }
 
 a {
@@ -183,8 +183,7 @@ h3 {
 	font-size: 14px;
 	font-weight: 700;	
 	height: 25px;
-	justify-content: center;
-	line-height: 0;
+	justify-content: center;	
 	margin-right: 10px;			
 	width: 25px;	
 }
@@ -246,13 +245,12 @@ h3 {
 	margin: auto;
 }
 
-.bloc{
-	
+.bloc{	
 	padding: 35px 20px;	
 }
 
 .block {	
-	padding: 35px 0;
+	padding: 30px 0;
 	width: 90%;				
 }
 
@@ -317,9 +315,8 @@ h3 {
 	background-color: #FFFFFF;
 	border-radius: 15px;
 	box-shadow: 1px 1px 10px 2px #D9D9D9;
-	margin-bottom: 30px;
-	padding: 5px;
-	width: 100%;	
+	margin-bottom: 20px;
+	padding: 5px;	
 }
 
 .box__content {
@@ -364,22 +361,14 @@ h3 {
 
 	.activities--img-med, .activities--img-medi, .activities--img-mini {
 		width: 350px;
-	}
-	
-	.activities--img-med {
-		margin-bottom: 35px;
-	}
+	}	
 
 	.acitivities--img-tall {
 		width: 100%;
 	}
 
-	.bloc {
+	.bloc, .block {
 		width: 95%;		
-	}
-
-	.block {
-		width: 95%;							
 	}
 
 	.block__title {
@@ -387,14 +376,13 @@ h3 {
 	}	
 
 	.block--accomodations, .block--hit {			
-		display: flex;
-		flex-direction: row;
+		display: flex;		
 		flex-wrap: wrap;
 		justify-content: space-between;		
-	}	
+	}		
 
-	.block--activities {
-		padding: 0;
+	.block--activities .box {		
+		width: 100%;
 	}
 	
 	.block--accomodations .box {
@@ -448,31 +436,22 @@ h3 {
 		max-width: 1340px;
 	}
 
-	.accomodations {
-		width: 95%;
+	.accomodations {		
 		display: flex;
 		flex-direction: row-reverse;
 		margin: auto;
-		padding-bottom: 35px;								
+		padding-bottom: 40px;								
 	}
 
 	.activities {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;											
-	}
-
-	.activities .box {
-		margin-bottom: 50px;
-	}
+	}	
 	
 	.activities__block {				
 		width: 300px;			
-	}
-
-	.activities--img-med {
-		margin-bottom: 0;
-	}
+	}	
 
 	.activities--img-med .box__image {
 		height: 140px;		
@@ -492,19 +471,18 @@ h3 {
 
 	.bloc {
 		margin: 0;
-		padding: 35px 20px;
 		width: auto;
-	}
-
-	.block--activities .block__title {
-		width: 100%;
 	}	
 	
 	.block__fin {
 		width: 80%;
 		display: flex;
 		justify-content: space-between;
-	}	
+	}
+	
+	.block--activities .box {
+		margin-bottom: 40px;
+	}
 	
 	.block--accomodations, .block--hit {		
 		background-color: #F2F2F2;
@@ -513,7 +491,7 @@ h3 {
 	
 	.block--accomodations {			
 		margin: 0 40px 0 0;
-		padding: 30px;		 		
+		padding: 40px 30px;		 		
 	}
 
 	.block--accomodations .box {				
@@ -564,8 +542,7 @@ h3 {
 	}
 
 	.header {				
-		flex-wrap: nowrap;
-		width: 95%;										
+		flex-wrap: nowrap;												
 	}
 	
 	.header__action {
