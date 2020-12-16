@@ -47,6 +47,11 @@ body {
 	box-sizing: border-box;					
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 a {
 	color: #000000;
 	display: block;	
@@ -54,13 +59,9 @@ a {
 	padding-top: 10px;
 }
 
-button {
-	padding: 0;
-}
-
 h1, h2, h3, h4, p {
 	font-weight: 400;
-	margin: 0;	
+		
 }
 
 h3 {
@@ -98,8 +99,7 @@ h3 {
 	flex-wrap: wrap;
 	font: 700 18px "Raleway";	
 	justify-content: space-between;
-	margin: auto;
-	width: 100%;		
+	margin: auto;			
 }
 
 .header__action {
@@ -361,18 +361,14 @@ h3 {
 
 	.activities--img-med, .activities--img-medi, .activities--img-mini {
 		width: 350px;
-	}	
-
-	.acitivities--img-tall {
-		width: 100%;
-	}
+	}		
 
 	.bloc, .block {
 		width: 95%;		
 	}
 
 	.block__title {
-		width: 100%;		
+		width: 80%;		
 	}	
 
 	.block--accomodations, .block--hit {			
@@ -429,6 +425,7 @@ h3 {
 	}	
 
 		/* 		DESKTOP		 */
+}
 
 @media only screen and (min-width: 1200px) {
 	
@@ -528,8 +525,7 @@ h3 {
 		margin-right: 30px;
 	}
 
-	.filter:hover {
-		background-color: #DEEBFF;
+	.filter:hover {		
 		border-color: #DEEBFF;
 		color: #0065FC;		
 	}
@@ -554,7 +550,7 @@ h3 {
 		flex: 1;				
 	}
 
-	.logo {					
+	.logo {				
 		margin: 50px 0 0;		
 		object-fit: none;
 		object-position: left;							
