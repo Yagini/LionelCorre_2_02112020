@@ -5,9 +5,9 @@
 /* L14		COLORS
 /* L23		FONTS
 /* L41		MAIN COMPONENT
-/* L93		HEADDER + NAV
+/* L94		HEADDER + NAV
 /* L134		FILTERS + SEARCH
-/* L239D		BLOCK + BOX
+/* L239		BLOCK + BOX
 /* L349		QUERIES
 /*
 /*-------------------------------------------*/
@@ -41,15 +41,14 @@
 /*==          MAIN COMPONENT    		*/
 /*-------------------------------------*/
 
-body {		
-	font-family: "Raleway", Arial, sans-serif;	
-	margin: 0;
-	box-sizing: border-box;					
-}
-
-* {
+*{
 	margin: 0;
 	padding: 0;
+}
+
+body {
+	box-sizing: border-box;			
+	font-family: "Raleway", Arial, sans-serif;							
 }
 
 a {
@@ -99,7 +98,8 @@ h3 {
 	flex-wrap: wrap;
 	font: 700 18px "Raleway";	
 	justify-content: space-between;
-	margin: auto;			
+	margin: auto;
+				
 }
 
 .header__action {
@@ -301,7 +301,7 @@ h3 {
 .block--hit .box__image {
 	border-bottom-left-radius: 15px;
 	border-top-right-radius: 0;
-	height: 100%;
+	height: auto;
 	width: 128px;	
 }
 
@@ -364,11 +364,11 @@ h3 {
 	}		
 
 	.bloc, .block {
-		width: 95%;		
+		width: 95%;	
 	}
 
 	.block__title {
-		width: 80%;		
+		width: 100%;				
 	}	
 
 	.block--accomodations, .block--hit {			
